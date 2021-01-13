@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <title>Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="left-column">
+    <h1>
+      Learn to code by watching others
+    </h1>
+    <p class="p">
+      See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+      but understanding how developers think is invaluable.
+    </p>
+  </div>
+
+  <div class="right-column">
+    <div class="header">
+      <span>Try it free 7 days</span> then $20/mo. thereafter
+    </div>
+
+    <div class="form">
+      <form action="">
+        <input type="text" placeholder="First Name" class="input" id='name'>
+        <div class='err' id='fname'>
+          <img src="./images/icon-error.svg" alt="">
+          <p>First name cannot be empty</p>
+        </div>
+        <br>
+        <input type="text" placeholder="Last Name" class="input" id='lastname'>
+        <div class='err' id='lname'>
+          <img src="./images/icon-error.svg" alt="">
+          <p>Last name cannot be empty</p>
+        </div>
+        <br>
+        <input type="text" placeholder="Email Address" class="input" id='mail'>
+        <div class='err' id='email'>
+          <img src="./images/icon-error.svg" alt="">
+          <p>Email cannot be empty</p>
+        </div>
+        <br>
+        <input type="password" placeholder="Password" class="input" id='password'>
+        <div class='err' id='pass'>
+          <img src="./images/icon-error.svg" alt="">
+          <p>Password cannot be empty</p>
+        </div>
+        <br>
+        <button type="button" class="input button" id='myBtn'>CLAIM YOUR FREE TRAIL</button>
+        <pre>By clicking the button, you are agreeing to our <span style="color: hsl(0, 100%, 74%); font-weight: bolder;">Terms and Services</span></pre>
+      </form>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
